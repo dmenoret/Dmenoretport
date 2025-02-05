@@ -1,0 +1,107 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="test.css" />
+		<title>
+			Projet LoopHERO
+		</title>
+	</head>
+	<body>
+		<nav>
+			<div class="profile">
+                <a href = "portfolio.html">
+				    <img src="../images/selfphoto.png" alt="profile photo" />
+                </a>
+				<h1>Denis Menoret</h1>
+			</div>
+			<ul>
+				<li><a href = "parcours.html">Parcours</a></li>
+				<li><a href = "cv.pdf">CV</a></li>
+				<li><a href = "entreprise.html">Entreprise</a></li>
+				<li><a href = "competences.html">Compétences</a></li>
+				<li><a href = "profil.html">&Agrave; propos de moi</a></li>
+				<li><a href = "index.html">Page d'accueil</a></li>
+			</ul>
+		</nav>
+
+		<section class="page-content">
+			<header>
+				<h1>Bienvenue sur la page du projet LoopHERO
+                </h1>
+				<p>
+					Ici je vais vous présenter l'un des projets que j'ai réalisé durant ma première année de BUT Informatique, une 
+                    version simplifié du jeu vidéo LoopHERO.<br><br>
+                    Il s'agit à l'origine d'un jeu vidéo ou un héros avance dans un mode détruit que l'on reconstruit grâce à des 
+                    cartes, que l'on dispose sur le terrain,<br><br>
+                    J'ai réalisé ce projet en solitaire, bien qu'il était censé être réalisé avec quelqu'un d'autre (avec un autre étudiant
+                    de l'université), il a été réalisé en Java, et contient la majorité des fonctionnalités demandées, bien que 
+					j'ai eu de nombreux problèmes étant ma première rencontre avec une
+                    gestion de temps de jeu et d'events, d'intervalles, malgré tout, j'ai réussi à finaliser le projet comme demandé par le professeur.
+				</p>
+			</header>
+
+			<section class="presentation-image">
+				<img src="../images/imgloop.png" alt="AI image" />
+			</section>
+			<details><summary><p>Cliquez pour plus de détails</p></summary>
+            <p>
+                Cette image est le visuel du jeu que j'ai créé, on peut y voir la route que le héros traverse, pas le joueur car ce dernier n'agit
+                que pour aider le héros, il place des cartes et gère l'équipement du héros qui affrontera les monstres qu'il rencontre sur la route
+                , le héros commence au village et voyage de zone en zone toutes les heures, quand il arrive sur une zone avec un monstre, un combat
+                se déclenche, il se déroule automatiquement, les monstres et le héros lance leurs attaques en même temps, quand tous les monstres ou
+                le héros n'ont plus de vie, le combat s'arrête, si le héros perd, la partie s'arrête et on calcule les points, sinon on continue en
+                accumulant les objets obtenus des monstres, des cartes, des équipements ou des objets qui rapportent des points. les cartes influent
+                sur le terrain, il y en a trois type, les zones, qui peuvent être n'importe où tant qu'il n'y a pas de routes à coté et dont l'effet
+                est d'augmenter les statistiques du héros, les cartes routes qui concernent les zones de déplacement du héros, principalement agissant
+                de façon à augmenter la diversité des monstres apparaissant, enfin les cartes bord de route qui ont un effet sur toutes les routes
+                adjascentes, il peuvent augmenter la probabilité d'apparition de monstres dans ces zones. l'équipement sers à augmenter les stat du 
+                héros, et s'équipe en appuyant sur le bouton de pause dans le jeu, le temps se fige ce qui permet de modifier les éléments équipés,
+                on peut en avoir 12 au total et les plus anciens sont remplacés quand la limite est atteinte, sans oublié le cycle jour nuit afin de
+                faire réapparaître les monstres, <br><br>Ce projet contenait donc énormément de caractéristiques ce qui représentatait un travail sur
+                une longue durée, mais qui a resté énormément instructif et dont je me servirai encore longtemps comme référence dans encore de
+                nombreuses autres situations.
+                <br><br>
+                statut : terminé
+            </p></details>
+
+			<section class="projects-section">
+				<h1>Mes autres projets</h1>
+				<div class="projects">
+					<a href = "projetazul.html">
+					<div class="project">
+						<h4>Création d'une version numérisée du jeu AZUL</h4>
+						<p class="description">
+                            <img src="../images/imgazul.png" alt="">
+						</p>
+						<p class="dates">Dates 2021 - 2022</p>
+					</div></a>
+					<a href = "projetweb.html">
+					<div class="project">
+						<h4>Création d'un site WEB sur les Îles Marshall pour l'UNESCO via l'université</h4>
+						<p class="description">
+							<img src ="../images/imgmarshall.png" alt="">
+						</p>
+						<p class="dates">Dates 2021 - 2022</p>
+					</div></a>
+					<a href = "projetboggle.html">
+					<div class="project">
+						<h4>Création d'une version numérique et multijoueur du jeu Boggle</h4>
+						<p class="description">
+							<img src ="../images/imgboggle.png" alt="">
+						</p>
+						<p class="dates">Dates 2022 - 2023</p>
+					</div></a>
+				</div>
+			</section>
+		</section>
+
+		<footer>
+			<div class="colonne">
+				<h3>Mes adresses</h3>
+				<p>denismenoret04@gmail.com</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,153 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="test.css" />
+		<link rel="icon" type="image/x-icon" href="../images/selfphoto.png">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.onload = function () {
+ 
+			(function() {// Code in a function to create an isolate scope 
+			var speed = 300;
+			var moving_frequency = 15; // Affects performance !
+			var links = document.querySelectorAll(".link a"); // Active links
+			var href;
+			for(var i=0; i<links.length; i++) {  
+				href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
+				if(href !== null && href.length > 1 && href.substr(0, 1) == '#'){
+					links[i].onclick = function() {
+						var element;
+						var href = this.attributes.href.nodeValue.toString();
+						if(element = document.getElementById(href.substr(1))) {
+							var hop_count = speed/moving_frequency
+							var getScrollTopDocumentAtBegin = getScrollTopDocument();
+							var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
+		 
+							for(var j = 1; j <= hop_count; j++)	{
+								(function() {
+									var hop_top_position = gap*j;
+									setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*j);
+								})();
+							}
+						}
+		 
+						return false;
+					};
+				}
+			}
+		 
+			var getScrollTopElement =  function (e){
+				var top = 0;
+		 
+				while (e.offsetParent != undefined && e.offsetParent != null) {
+					top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+					e = e.offsetParent;
+				}
+		 
+				return top;
+			};
+		 
+			var getScrollTopDocument = function() {
+				return document.documentElement.scrollTop + document.body.scrollTop;
+			};
+			})();
+			 
+		}</script>
+		<title>
+			accueil
+		</title>
+	</head>
+	<body>
+		<nav>
+			<div class="profile">
+                <a href = "profil.html">
+				    <img src="../images/selfphoto.png" alt="profile photo" />
+                </a>
+				<h1>Denis Menoret</h1>
+			</div>
+			<ul>
+				<li><a href = "parcours.html">Parcours</a></li>
+				<li><a href = "cv.pdf">CV</a></li>
+				<li><a href = "entreprise.html">Entreprise</a></li>
+				<li><a href = "competences.html">Compétences</a></li>
+				<li><a href = "profil.html">&Agrave; propos de moi</a></li>
+				<li><a href = "index.html"><u>Page d'accueil</u></a></li>
+			</ul>
+		</nav>
+
+		<section class="page-content">
+			<div>
+				<header>
+					<h1>Denis Menoret</h1>
+					<p>
+						Je suis développeur informatique, étudiant en 2ème année de BUT Informatique à l'IUT Gustave Eiffel et alternant à la javaness. Je vous souhaite la bienvenue sur mon portfolio.
+					</p>
+				</header>
+			</div>
+			<div class="middle">
+				<div class="index-image">
+					<img src="../images/univ.jpg" alt="AI image" />
+				</div>
+				<div class="skills">
+					Je maîtrise :
+					<Table>
+						<tr><td><img src="../images/PYTHON.png" alt ="python logo"/></td><td class="space">        </td><td>Python</td></tr>
+						<tr><td><img src="../images/JAVA.png" alt ="Java logo"/></td><td>        </td><td>Java</td></tr>
+						<tr><td><img src="../images/SQL.png" alt ="SQL logo"/><img src="../images/PHP.png" alt ="PHP logo"/></td><td>        </td><td>SQL, PHP</td></tr>
+						<tr><td><img src="../images/HTML.png" alt ="HTML logo"/><img src="../images/CSS.png" alt ="CSS logo"/></td><td>        </td><td>HTML, CSS</td></tr>
+						<tr><td><img src="../images/JAVASCRIPT.png" alt ="JAVASCRIPT logo"/></td><td>        </td><td>Javascript</td></tr>
+					</Table>
+				</div>
+			</div>
+			<div class="link">
+				<a href="#projects">
+					<img src="../images/down.png"> Mes projets
+				</a>
+			</div>
+			<div id="projects">
+
+			</div>
+			<section class="projects-section">
+				<h1>Mes projets</h1>
+				<table class="projects">
+					<tr>
+						<td><a href = "projetazul.html"><h4>Création d'une version numérisée du jeu AZUL</h4></a></td>
+						<td><a href = "projetloop.html"><h4>Création d'une version simplifiée du jeu "LoopHERO"</h4></a></td>
+						<td><a href = "projetweb.html"><h4>Création d'un site WEB sur les &Icirc;les Marshall pour l'UNESCO via l'université</h4></a></td>
+						<td><a href = "projetboggle.html"><h4>Création d'une version numérique et multijoueur du jeu Boggle</h4></a></td>
+					</tr>
+					<tr>
+						<td>
+							<a href = "projetazul.html"><p class="description">
+                            <img src="../images/imgazul.png" alt="">
+							</p></a>
+						</td>
+						<td><a href = "projetloop.html"><p class="description">
+							<img src ="../images/imgloop.png" alt="">
+						</p></a></td>
+						<td><a href = "projetweb.html"><p class="description">
+							<img src ="../images/imgmarshall.png" alt="">
+						</p></a></td>
+						<td><a href = "projetboggle.html"><p class="description">
+							<img src ="../images/imgboggle.png" alt="">
+						</p></a></td>
+					</tr>
+					<tr>
+						<td><p class="dates"> 2021 - 2022</p></td>
+						<td><p class="dates"> 2021 - 2022</p></td>
+						<td><p class="dates"> 2021 - 2022</p></td>
+						<td><p class="dates"> 2022 - 2023</p></td>
+					</tr>
+				</table>
+			</section>
+		</section>
+
+		<footer>
+			<div class="colonne">
+				<h3>Mes adresses</h3>
+				<p>denismenoret04@gmail.com</p>
+			</div>
+		</footer>
+	</body>
+</html>
