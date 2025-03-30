@@ -8,17 +8,18 @@ a:visited{
 }
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	padding: 0 2%;
+	padding: 0;
 	margin: 0;
-	background: linear-gradient(rgb(96, 213, 144), rgb(160, 230, 188), rgb(168, 225, 231), rgb(101, 135, 139));  
+	background-color: #e6f4ea !important;
 }
 
-nav {
+/* nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: transparent;
+	background: linear-gradient(rgb(96, 213, 144), rgb(160, 230, 188), rgb(168, 225, 231), rgb(101, 135, 139));
+	width: 100%;
 	position: sticky;
 	top: 0;
 }
@@ -49,14 +50,10 @@ nav ul li:visited {
 }
 nav ul li:hover {
 	border-bottom-color: rgb(13, 80, 31);
-}
+} */
 
 .page-content {
 	margin: 4%;
-}
-.page-content header {
-	margin-top: -5%;
-	max-width: 50%;
 }
 .space {
 	width: 50px;
@@ -66,24 +63,27 @@ nav ul li:hover {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-size: 72;
+	margin-bottom: 20px;
 }
 .page-content header p {
 	line-height: 30px;
-	color: #fff;
-	font-weight: bold;
+	color: black;
+	font-weight: 500;
 }
 li {
 	margin-top: 10px;
+	font-weight: 500;
 }
 .page-content p {
 	line-height: 30px;
-	color: #fff;
+	color: black;
 	font-size: 15;
   	margin-bottom: 20px;
-	font-weight: bold;
+	font-weight: 500;
 }
 .page-content .presentation-image {
 	width: 100%;
+	text-align: center;
 }
 .page-content .index-image {
 	width: 50%;
@@ -99,12 +99,25 @@ li {
 	max-width: 100%;
 	height: auto;
 }
-h1{ margin-top:20%;}
+.page-header-content {
+	height: 80vh;
+}
+.page-header-content header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.page-header-content header img {
+	max-width: 25%;
+}
+/* h1{ margin-top:20%;}
 .page-content .presentation-image figcaption {
 	line-height: 30px;
 	color:#818181;
 	font-size: smaller;
-}
+} */
 section>h1 {
 	margin-top: 50px;
 }
@@ -132,6 +145,7 @@ section>h1 {
 }
 .page-content .projects-section .project h4 {
 	margin: 0;
+	color: #2e7d4f;
 }
 .page-content .projects-section .project .description {
 	font-size: 10px;
@@ -142,8 +156,16 @@ section>h1 {
 }
 .page-content .projects-section .projects .dates {
 	font-size: 13px;
-	color: #fff;
+	color: black;
 	text-align: center;
+}
+.title-projects {
+	color: black;
+	text-decoration: none;
+}
+.title-projects:hover {
+	color: #2e7d4f;
+	text-decoration: none;
 }
 
 footer {
@@ -152,7 +174,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 10px;
-	background-color: rgb(15, 69, 23);
+	background-color: #2e7d4f;
 	color: white;
 }
 footer .colonne p {
@@ -165,12 +187,12 @@ footer .colonne p:hover {
 }
 
 @media screen and (max-width: 700px) {
-	nav {
+	/* nav {
 		justify-content: center;
 	}
 	nav ul {
 		display: none;
-	}
+	} */
 
 	.page-content header {
 		margin-top: 10%;

@@ -4,60 +4,80 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="test.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"> <!-- Bootstrap CSS -->
+        <title>
 		<title>
 			Projet Site web Îles Marshall
 		</title>
 	</head>
 	<body>
-		<nav>
-			<div class="profile">
-                <a href = "portfolio.html">
-				    <img src="../images/selfphoto.png" alt="profile photo" />
-                </a>
-				<h1>Denis Menoret</h1>
-			</div>
-			<ul>
-				<li><a href = "parcours.html">Parcours</a></li>
-				<li><a href = "cv.pdf">CV</a></li>
-				<li><a href = "entreprise.html">Entreprise</a></li>
-				<li><a href = "competences.html">Compétences</a></li>
-				<li><a href = "profil.html">&Agrave; propos de moi</a></li>
-				<li><a href = "index.html">Page d'accueil</a></li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../images/selfphoto.png" alt="profile photo"
+                    width="40" height="40" class="rounded-circle me-2">
+                <span>Denis Menoret</span>
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end"
+                id="navbarContent">
+                <ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link"
+						href="index.html">Page d'accueil</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						href="profil.html">À propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="parcours.html">Parcours</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="entreprise.html">Entreprise</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="cv.pdf">CV</a></li>
+                </ul>
+            </div>
+        </nav>
 
 		<section class="page-content">
 			<header>
 				<h1>
-                    Bienvenue sur la page du projet de Site WEB sur les Îles Marshall
+                    Bienvenue sur la page du projet de Site WEB de l'université
                 </h1>
 				<p>
-					Il s'agit là d'un projet en partenariat avec l'UNESCO, nous devions créer un site web présentant un site de l'UNESCO et
-                    nous avions choisi les Îles Marshall, Malheureusement ce projet a fini inachevé, <br>La principale raison étant que l'équipe
-                    de six personnes qui participaient a fini par se réduire à seulement deux personnes, de nombreux membres ont quittés l'université en
-                    milieu d'année dont l'un avec les fichiers du site web, et nous n'arrivions plus à le contacter, erreur causée par le fait
-                    que c'était la première fois que je travaillais avec autant de personnes sur un aussi grand projet.
+					Il s'agit là du projet principal de la troisième année à l'université, où avec l'aide de cinq camarades, j'ai participé à la 
+					complétion d'un nouveau modèle du site web de l'IUT en nous servant du travail réalisé par un autre groupe l'année dernière,
+					avons poursuivi leur réalisation en menant notre propre enquête auprès des étudiant, enseignants et personnel administratif
+					afin de pouvoir comprendre les besoins de chacuns et réaliser toutes les fonctionnalités demandées. <br>
+					Il s'agissait du plus grand projet auquel j'ai participé dont j'ai pu travailler dessus du début à la fin et c'était une 
+					expérience qui m'a permis de comprendre la mise en place d'un projet, du reccueil des besoins à l'établissement d'un plan,
+					c'était un projet sur un sujet que je rencontre au quotidient et dans lequel j'étais beaucoup impliqué et j'ai beaucoup
+					apprécié cette expérience extrêmement enrichissante
 				</p>
 			</header>
 
 			<section class="presentation-image">
-				<img src="../images/imgmarshall.png" alt="AI image" />
+				<img src="../images/imgINGRID.webp" alt="AI image" />
 			</section>
 			
 			<details><summary><p>Cliquez pour plus de détails</p></summary>
 
             <p>
-                Cette image est une capture d'écran de la page d'accueil du site, récupérée pour une présentation sur le projet en lui-même à
-                l'université, Nous avons séparé la réalisation du projet en différentes phases, la première où nous récupérions les
-                informations pour le site, l'autre où nous déterminions l'architecture du site, et la dernière où nous le réalisions, ça a
-                été ma première expérience sur un projet comprenant autant de monde et sur une telle durée, il m'a fait comprendre l'importance
-                des communications, les réunions de brainstorming et les rôles de chacun des membres, j'étais énormément accompagné lors de
-                ce projet et j'ai beaucoup appris sur les différentes méthodes pour aborder un projet, ici ce n'est pas le résultat qui a
-                été important mais la route empruntée, car elle m'a apporté beaucoup, <br><br>
-                Ce n'est certes pas le projet dont je suis le plus fier mais il restera l'un de ceux qui seront les plus importants de mon 
-                expérience professionnelle sur le plan des relations humaines.
+                Cette image est une capture d'écran de la page d'accueil du site, on peut y voir la barre de navigation permettant de se déplacer 
+				dans les différentes pages du site, qui changent en fonction de son statut, qu'on soit étudiant, enseignant ou du personnel administratif
+				les différentes fonctionnalités vont principalement à l'affichage de l'emploi du temps, la vérification de présence étudiante, la 
+				la gestion des notes, et la communication inter-utilisateurs, c'était un projet très long ponctué de nombreuses réunions où nous devions
+				trouver des solutions pour chacunes des différentes fonctionnalités, nous travaillions sur différentes parties séparées que nous ajoutions
+				au projet et faisions fonctionner ensemble, c'est le projet le plus important sur lequel j'ai travaillé pour du développement web, utilisant
+				les langages HTML, CSS, Javascript et énormèment d'autres modules comme express, dataTables et Prysma.
                 <br><br>
-                statut : inachevé
+                statut : achevé
             </p></details>
 
 			<section class="projects-section">
@@ -97,5 +117,8 @@
 				<p>denismenoret04@gmail.com</p>
 			</div>
 		</footer>
-	</body>
+	<script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+    </body>
 </html>
